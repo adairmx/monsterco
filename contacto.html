@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contáctanos para servicios de plomería, limpieza de tinacos, pintura e impermeabilización en CDMX y Querétaro. Cotización gratuita.">
+    <meta name="keywords" content="contacto MonsterCo, cotización gratis, plomero CDMX, servicios Querétaro">
+    <title>Contacto - MonsterCo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>MonsterCo</h1>
+                    <p class="tagline">Servicios Profesionales</p>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="cdmx.html">CDMX</a></li>
+                    <li><a href="queretaro.html">Querétaro</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                    <li><a href="tel:+525512345678" class="btn-emergency">Emergencias 24/7</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 3rem 0;">
+            <div class="container">
+                <h1 style="font-size: 3rem;">Contáctanos</h1>
+                <p class="hero-description">Estamos listos para atenderte. Solicita tu cotización gratuita.</p>
+            </div>
+        </section>
+
+        <section style="padding: 4rem 0;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-bottom: 4rem;">
+                    <div style="text-align: center; padding: 2rem; background: var(--light-color); border-radius: 1rem;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary-color);">📞 Teléfonos</h3>
+                        <p style="font-size: 1.125rem; margin-bottom: 0.5rem;"><strong>CDMX:</strong> <a href="tel:+525512345678" style="color: var(--primary-color);">55-1234-5678</a></p>
+                        <p style="font-size: 1.125rem;"><strong>Querétaro:</strong> <a href="tel:+524421234567" style="color: var(--primary-color);">442-123-4567</a></p>
+                        <p style="margin-top: 1rem; color: var(--secondary-color); font-weight: 600;">Disponible 24/7 para emergencias</p>
+                    </div>
+
+                    <div style="text-align: center; padding: 2rem; background: var(--light-color); border-radius: 1rem;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary-color);">📧 Email</h3>
+                        <p style="font-size: 1.125rem;"><a href="mailto:info@monsterco.com" style="color: var(--primary-color);">info@monsterco.com</a></p>
+                        <p style="margin-top: 1rem;">Respuesta en menos de 24 horas</p>
+                    </div>
+
+                    <div style="text-align: center; padding: 2rem; background: var(--light-color); border-radius: 1rem;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary-color);">⏰ Horario</h3>
+                        <p style="font-size: 1.125rem;"><strong>Lun - Vie:</strong> 8:00 AM - 8:00 PM</p>
+                        <p style="font-size: 1.125rem;"><strong>Sáb - Dom:</strong> 9:00 AM - 6:00 PM</p>
+                        <p style="margin-top: 1rem; color: var(--secondary-color); font-weight: 600;">Emergencias: 24/7</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2 style="text-align: center; margin-bottom: 2rem;">Solicita tu Cotización</h2>
+                    <form action="#" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo *</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" required placeholder="10 dígitos">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ubicacion">Ubicación *</label>
+                            <select id="ubicacion" name="ubicacion" required>
+                                <option value="">Selecciona tu ubicación</option>
+                                <option value="cdmx">Ciudad de México</option>
+                                <option value="queretaro">Querétaro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="servicio">Servicio de Interés *</label>
+                            <select id="servicio" name="servicio" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="limpieza-tinacos">Limpieza de Tinacos y Cisternas</option>
+                                <option value="pintura">Pintura Interior o Exterior</option>
+                                <option value="impermeabilizacion">Impermeabilización</option>
+                                <option value="plomeria">Plomería General</option>
+                                <option value="emergencia">Emergencia de Plomería</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Describe tu Proyecto o Necesidad *</label>
+                            <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos qué necesitas..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Enviar Solicitud</button>
+                    </form>
+
+                    <p style="text-align: center; margin-top: 1.5rem; font-size: 0.875rem; color: var(--text-color);">
+                        Al enviar este formulario aceptas que te contactemos para brindarte información sobre nuestros servicios.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="coverage-areas">
+            <div class="container">
+                <h2 class="section-title">Zonas de Cobertura</h2>
+                <div class="areas-grid">
+                    <div class="area-card">
+                        <h3>🏙️ Ciudad de México</h3>
+                        <p>Atendemos todas las alcaldías de la CDMX:</p>
+                        <p style="font-size: 0.875rem; line-height: 1.8; margin-top: 1rem;">
+                            Álvaro Obregón • Azcapotzalco • Benito Juárez • Coyoacán • Cuajimalpa • Cuauhtémoc • 
+                            Gustavo A. Madero • Iztacalco • Iztapalapa • Magdalena Contreras • Miguel Hidalgo • 
+                            Milpa Alta • Tlalpan • Venustiano Carranza • Xochimilco
+                        </p>
+                    </div>
+                    <div class="area-card">
+                        <h3>🏛️ Querétaro</h3>
+                        <p>Zona metropolitana completa:</p>
+                        <p style="font-size: 0.875rem; line-height: 1.8; margin-top: 1rem;">
+                            Querétaro Centro • Juriquilla • El Pueblito • Corregidora • El Marqués • 
+                            Santa Rosa Jáuregui • San Pedro Mártir • Santa María Magdalena • 
+                            Felipe Carrillo Puerto • Huimilpan
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>MonsterCo</h3>
+                    <p>Servicios profesionales de calidad para tu hogar y negocio en CDMX y Querétaro.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="servicio-limpieza-tinacos.html">Limpieza de Tinacos</a></li>
+                        <li><a href="servicio-pintura.html">Pintura</a></li>
+                        <li><a href="servicio-impermeabilizacion.html">Impermeabilización</a></li>
+                        <li><a href="servicio-plomeria.html">Plomería General</a></li>
+                        <li><a href="servicio-emergencias.html">Emergencias 24/7</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Zonas</h4>
+                    <ul>
+                        <li><a href="cdmx.html">Ciudad de México</a></li>
+                        <li><a href="queretaro.html">Querétaro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📞 55-1234-5678</li>
+                        <li>📧 info@monsterco.com</li>
+                        <li>⏰ Disponible 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MonsterCo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Gracias por tu solicitud. Te contactaremos pronto.\n\nPara emergencias, llama directamente:\nCDMX: 55-1234-5678\nQuerétaro: 442-123-4567');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
